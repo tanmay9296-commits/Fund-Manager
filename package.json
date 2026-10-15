@@ -1,0 +1,25 @@
+{
+  "name": "college-event-fund-dapp",
+  "version": "1.0.0",
+  "description": "Transparent College Event Fund Management DApp (Ethereum, Hardhat, React)",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy": "hardhat run scripts/deploy.js --network localhost",
+    "seed": "hardhat run scripts/seedDemo.js --network localhost",
+    "frontend:install": "npm --prefix frontend install",
+    "frontend": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "^3.0.11",
+    "@nomicfoundation/hardhat-toolbox": "^7.0.0",
+    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^4.0.0",
+    "@openzeppelin/contracts": "^5.4.0",
+    "hardhat": "^3.19.0",
+    "solc": "^0.8.28"
+  },
+  "type": "module"
+}
